@@ -1,0 +1,13 @@
+name: Test Workflow
+
+on:
+  pull_request:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Run tests
+        run: echo "Rodando testes"
